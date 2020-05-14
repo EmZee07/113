@@ -507,7 +507,7 @@ def pilih_super():
 	p = ThreadPool(30)
 	p.map(main, id)
 	print 25*"\033[1;96m﹌"
-        print"\033[1;96m
+        print""" \033[1;96m
 
                   `.-://////:-.`
               .:+o+:-..````..-:+o+:.
@@ -532,7 +532,7 @@ def pilih_super():
                   `.-::////::-.` \033[91;1m
 
                 \033[90;1mLife Of Programmer\033[91;1m
-             Powered by:\033[97m Mr. ZeDD"
+             Powered by:\033[97m Mr. ZeDD """
 	print '\033[1;96m[\033[1;97m✓\033[1;96m] \033[1;92mDone \033[1;97m....'
 	print"\033[1;96m[+] \033[1;92mTotal OK/\x1b[1;93mCP \033[1;91m: \033[1;92m"+str(len(oks))+"\033[1;97m/\033[1;93m"+str(len(cekpoint))
 	print("\033[1;96m[+] \033[1;92mCP File Has Been Saved \033[1;91m: \033[1;97mout/ZeDD.txt")
